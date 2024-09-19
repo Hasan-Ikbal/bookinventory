@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Inventory Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Book Inventory Management</h1>
+    <form id="book-form">
+      <input type="text" id="title" placeholder="Title" required>
+      <input type="text" id="author" placeholder="Author" required>
+      <input type="text" id="genre" placeholder="Genre">
+      <input type="date" id="publication_date" placeholder="Publication Date">
+      <input type="text" id="isbn" placeholder="ISBN" required>
+      <button type="submit" id="add-book-btn">Add Book</button>
+    </form>
+
+    <div id="filter-section">
+      <h3>Filter Books</h3>
+      <input type="text" id="filter-title" placeholder="Filter by Title">
+      <input type="text" id="filter-author" placeholder="Filter by Author">
+      <input type="text" id="filter-genre" placeholder="Filter by Genre">
+      <button id="filter-btn">Filter</button>
+    </div>
+
+    <div id="book-list"></div>
+
+    <div id="export-section">
+      <button id="export-json">Export to JSON</button>
+      <button id="export-csv">Export to CSV</button>
+    </div>
+  </div>
+
+  <script src="book.js"></script>
+</body>
+</html>
